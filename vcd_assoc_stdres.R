@@ -1,7 +1,7 @@
 library(vcd)
 
 # modified resbalanced function 
-legend_res <- structure(function (fontsize = 12, fontfamily = "", x = unit(1, 
+legend_res <- structure(function (fontsize = 11, fontfamily = "", x = unit(1, 
     "lines"), y = unit(0.1, "npc"), height = unit(0.8, "npc"), 
     width = unit(0.7, "lines"), digits = 2, check_overlap = TRUE, 
     text = NULL, steps = 200, ticks = 10, pvalue = TRUE, range = NULL) 
