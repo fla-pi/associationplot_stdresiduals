@@ -1,6 +1,7 @@
 library(vcd)
 
-legend_res <- structure(function (fontsize = 10.5, fontfamily = "", x = unit(1, 
+# modified resbalanced function 
+legend_res <- structure(function (fontsize = 12, fontfamily = "", x = unit(1, 
     "lines"), y = unit(0.1, "npc"), height = unit(0.8, "npc"), 
     width = unit(0.7, "lines"), digits = 2, check_overlap = TRUE, 
     text = NULL, steps = 200, ticks = 10, pvalue = TRUE, range = NULL) 
@@ -82,7 +83,7 @@ legend_res <- structure(function (fontsize = 10.5, fontfamily = "", x = unit(1,
     }
 }, class = "grapcon_generator")
 
-
+# modified shading_hcl function
 shading_hcl2 <- structure(function (observed, residuals = NULL, expected = NULL, 
     df = NULL, h = NULL, c = NULL, l = NULL, interpolate = c(2, 
         4), lty = 1, eps = NULL, line_col = "black", p.value = NULL, 
@@ -176,7 +177,7 @@ shading_hcl2 <- structure(function (observed, residuals = NULL, expected = NULL,
     return(rval)
 }, class = "grapcon_generator")
 
-#function structplot modified
+#modified structplot function
 struct <- function (x, residuals = NULL, expected = NULL, condvars = NULL, 
     shade = NULL, type = c("observed", "expected"), 
     residuals_type = NULL, df = NULL, split_vertical = NULL, 
@@ -307,7 +308,7 @@ struct <- function (x, residuals = NULL, expected = NULL, condvars = NULL,
         residuals_type <- switch(residuals_type, deviance = "deviance\nresiduals:", 
             ft = "Freeman-Tukey\nresiduals:", pearson = "Pearson\nresiduals:", 
             residuals_type)
-        legend(residuals, gpfun, "standardized\nresiduals:")
+        legend(residuals, gpfun, "Std\nresiduals:")
     }
     if (!is.null(main)) {
         seekViewport(paste(prefix, "main", sep = ""))
