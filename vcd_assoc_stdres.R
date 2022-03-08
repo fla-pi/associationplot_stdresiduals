@@ -437,7 +437,7 @@ aspl <- function (x, row_vars = NULL, col_vars = NULL, compress = TRUE,
                                   xlim = NULL, ylim = NULL, spacing = spacing_conditional(sp = 0), 
                                   spacing_args = list(), split_vertical = NULL, keep_aspect_ratio = FALSE, 
                                   xscale = 0.9, yspace = unit(0.5, "lines"), main = NULL, 
-                                  sub = NULL, ..., gp_axis = gpar(lty = 3), simulate = FALSE, B = 2000) 
+                                  sub = NULL, ..., gp_axis = gpar(lty = 3), transform = FALSE, simulate = FALSE, B = 2000) 
       {
               if (is.logical(main) && main) 
                       main <- deparse(substitute(x))
@@ -455,13 +455,20 @@ aspl <- function (x, row_vars = NULL, col_vars = NULL, compress = TRUE,
                           df <- t2$parameter
                           }
                           p = t2$p.value
+                      if (transform == TRUE){
                           tab <- t(tab)
-                         t3 <- t(t2$stdres)
+                          t3 <- t(t2$stdres)
                           t4 <- t(t2$expected)
+                          }
+                      else{
+                          t3 <- t2$stdres
+                          t4 <- t2$expected
+                          }
+                          
                       dl <- length(dim(tab))
                       cond <- rep(TRUE, dl)
                       cond[length(attr(x, "row.vars")) + c(0, length(attr(x, 
-                                                                                                                                "col.vars")))] <- FALSE
+                            "col.vars")))] <- FALSE
                       if (inherits(spacing, "grapcon_generator")) 
                               spacing <- do.call("spacing", spacing_args)
                           spacing <- spacing(dim(tab), condvars = which(cond))
