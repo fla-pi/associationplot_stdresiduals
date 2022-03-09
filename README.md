@@ -3,7 +3,7 @@ This script consists of five modified functions from <code>vcd</code> package (M
 
 It builds mainly on <code>assoc()</code> function, that return residual-based shaded association plots from Pearson residuals.
 
-## Modified Code
+## Modified Functions
 
 
 
