@@ -4,7 +4,13 @@ This script consists of five modified functions from <code>vcd</code> package (M
 It builds mainly on <code>assoc()</code> function, that returns residual-based shaded association plots from Pearson residuals.
 
 ## Modified Functions
+The functions in the script are:
 
+* <code>aspl()</code>: modified version of <code>assoc()</code>.
+* <code>struct()</code>: modified version of <code>strucplot()</code>.
+* <code>legend_res()</code>: modified version of <code>legend_resbalance()</code>. This modified version was taken from [here](https://stackoverflow.com/questions/54674441/how-to-format-p-values-in-an-association-plot-made-with-vcd).
+* <code>shading_hcl2()</code>: modified version of <code>shading_hcl()</code>.
+* <code>vcdViewport()</code>: we kept this function as originally implemented in <code>vcd</code>.
 
 
 ## Usage
