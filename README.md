@@ -1,5 +1,5 @@
 # stdres_assocplot
-This script consists of five modified functions from <code>vcd</code> package (Meyer, Zeileis, Hornik 2021), and it allows to create association plots from chi-squared standardized residuals.
+This script consists of five modified functions from <code>vcd</code> package (Meyer, Zeileis, Hornik 2021), and it allows to create association plots standardized residuals for chi-squared test.
 
 It builds mainly on <code>assoc()</code> function, that returns residual-based shaded association plots from Pearson residuals.
 
