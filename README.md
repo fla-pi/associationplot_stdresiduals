@@ -59,7 +59,7 @@ You can also rotate the graph by passing the optional argument <code>transform =
 
 ![Alt text](https://github.com/fla-pi/stdres_assocplot/blob/main/Rplot_transformed.gif)
 
-FInally, it is also possible to create an association plot from the standardized residuals of Monte Carlo simulations. You can do this by passing the argument <code>simulate = T</code>. You can also change the number of iterations via the <code>B</code> argument (the default is 2000):
+Finally, it is also possible to create an association plot from the standardized residuals of Monte Carlo simulations. You can do this by passing the argument <code>simulate = T</code>. You can also change the number of iterations via the <code>B</code> argument (the default is 2000):
 
 ```
 > aspl(table, simulate = T, B = 10000)
