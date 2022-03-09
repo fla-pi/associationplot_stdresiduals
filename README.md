@@ -69,4 +69,4 @@ Finally, it is also possible to create an association plot from the standardized
 
 ## Packages
 
-Meyer D, Zeileis A, Hornik K (2021). _vcd: Visualizing Categorical Data_. R package version 1.4-9.
+Meyer, D., Zeileis, A., Hornik, K. (2021). _vcd: Visualizing Categorical Data_. R package version 1.4-9.
