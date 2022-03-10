@@ -42,10 +42,10 @@ treat            None        Some      Marked
 ```
 
 
-First of all, you need to run the full script:
+First of all, you need to run the full script (you need to specify the path):
 
 ```
-source("path/to/vcd_assoc_stdres.R", echo = TRUE)
+source("vcd_assoc_stdres.R", echo = TRUE)
 ```
 
 Then, you can use the <code>aspl()</code> function. This function takes the contingency table as its only argument:
