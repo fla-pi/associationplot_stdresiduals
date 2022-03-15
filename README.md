@@ -1,7 +1,7 @@
 # Standardized residuals association plot
 This script consists of five modified functions from <code>vcd</code> package (Meyer, Zeileis, Hornik 2021), and it allows to create association plots standardized residuals for chi-squared test.
 
-It builds mainly on <code>assoc()</code> function, that returns residual-based shaded association plots from Pearson residuals.
+It builds mainly on <code>assoc()</code> function, that returns residual-based shaded association plots only from Pearson residuals.
 
 ## Modified Functions
 The functions in the script are:
